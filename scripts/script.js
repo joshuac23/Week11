@@ -63,7 +63,17 @@ function change_list_style(list) {
 
 change_list_style()
 
+function updateImage(){
+    const imageElement = document.querySelector("#shoppingCart")
+    console.log(imageElement);
+    imageElement.src = "https://cdn-icons-png.flaticon.com/512/263/263142.png"
+    imageElement.width = 100;
+    imageElement.height = 100;
+    imageElement.alt = "Shopping cart icon"
 
+}
+
+updateImage()
 
 
 
