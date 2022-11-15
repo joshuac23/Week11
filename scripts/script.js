@@ -36,7 +36,7 @@
 
 
 
-let shopping_list = ['cheese', 'bread', 'ham', 'red pepper'];
+let shopping_list = ['cheese', 'bread', 'ham', 'red pepper', 'green onion'];
 const unordered_list_element = document.querySelector(".shopping"); // DOM element
 
 function populate_list(list) {
@@ -76,4 +76,13 @@ function updateImage(){
 updateImage()
 
 
+function changeColour(){
+    const li_elements = document.querySelectorAll(".shopping li"); // get all li elements in ul with class 'shopping'
+    for (let item of li_elements){
+        if (item.textContent.includes('green')){
+            item.classList.add('greenText');
+        }
+    }
+}
 
+changeColour()
