@@ -41,6 +41,7 @@ const unordered_list_element = document.querySelector(".shopping"); // DOM eleme
 
 function populate_list(list) {
     for (let i = 0 ; i<list.length ; i++) {
+        
         const list_item_element = document.createElement("li"); // for each item, create an li and append to unordered_list_element
         list_item_element.textContent = list[i]; // items still in memory, needs to be appended
         unordered_list_element.appendChild(list_item_element); // appending to the dom element
